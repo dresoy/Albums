@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <app-album-card class="col-sm-4" *ngFor="let album of albumList" [data]="album">
+        <app-album-card class="col-sm-4" *ngFor="let album of albumList; index as i" [data]="album" [indexValue]="i">
         </app-album-card>
     </div>
 </div>
